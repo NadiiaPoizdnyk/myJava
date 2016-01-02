@@ -1,5 +1,6 @@
-/** Slide #18
- *
+/** Slide #17-18
+ *  Тернарный оператор If-Then-Else
+ выражение1? выражение2: выражениеЗ
  */
 public class Ternary {
     public static void main(String args[]){
