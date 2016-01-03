@@ -4,6 +4,7 @@ This is my first GitHub Project where my Java works are stored.
 The 'MyProjects' folder consists of 
 - the 'HWs' folder;
 - the 'Lectures' folder.
+- the 'Training' folder.
 
 
 --> HWs consists of
@@ -13,3 +14,8 @@ The 'MyProjects' folder consists of
 
 --> Lectures consists of
 - SeleniumPart3 (the tasks from the 'Selenium – Part3.pptx' document).
+
+--> Training consists of
+- 1.Variables
+- 2.ClassMath
+- 3.ConsoleInput
