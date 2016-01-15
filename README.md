@@ -15,12 +15,13 @@ The 'MyProjects' folder consists of
 --> Lectures consists of
 - SeleniumPart3 (the tasks from the 'Selenium – Part3.pptx' document).
 
---> Training consists of
+--> *Training consists of*
 - 1.Variables
 - 2.ClassMath
 - 3.ConsoleInput (Scanner)
 - 4.DecisionMakingStatements
-	4.1.If_Then
-	4.2.If_Else_If
-	4.3.Switch
-	4.4.Ternary
+-- 4.1.If_Then
+-- 4.2.If_Else_If
+-- 4.3.Switch
+-- 4.4.Ternary
+- 5.ConditionalOperators	
