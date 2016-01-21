@@ -25,3 +25,7 @@ The 'MyProjects' folder consists of
 -- 4.3.Switch
 -- 4.4.Ternary
 - 5.ConditionalOperators	
+- 6. Loop
+-- 6.1. Do_While
+-- 6.2. For
+-- 6.3. For_Each
