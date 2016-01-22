@@ -29,3 +29,7 @@ The 'MyProjects' folder consists of
 -- 6.1. Do_While
 -- 6.2. For
 -- 6.3. For_Each
+- 7. Arrays
+-- 7.1. Int
+-- 7.2. String
+-- 7.3. Multidimensional
