@@ -17,7 +17,7 @@ The 'MyProjects' folder consists of
 
 --> *Training consists of*
 - 1.Variables
-- 2.ClassMath
+- 2.ClassMath (Random, CubeRoot, Degrees, Rounding, Trigonometry)
 - 3.ConsoleInput (Scanner)
 - 4.DecisionMakingStatements
 -- 4.1.If_Then
@@ -33,3 +33,4 @@ The 'MyProjects' folder consists of
 -- 7.1. Int
 -- 7.2. String
 -- 7.3. Multidimensional
+- 8. Converting (BooleanStringBack; LongIntLongStringBack; StringsIntBack)
