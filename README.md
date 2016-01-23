@@ -25,3 +25,4 @@ The 'MyProjects' folder consists of
 - 7. Arrays (7.1. Int; 7.2. String; 7.3. Multidimensional)
 - 8. Converting (BooleanStringBack; LongIntLongStringBack; StringsIntBack)
 - 9. Strings (length(), charAt(), equals(), compareTo(), valueOf(); substring(), indexOf(), replace(), isEmpty(), split())
+- 10. Classes (10.1.Declaring Objects; etc.)
