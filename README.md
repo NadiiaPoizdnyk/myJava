@@ -19,18 +19,8 @@ The 'MyProjects' folder consists of
 - 1.Variables
 - 2.ClassMath (Random, CubeRoot, Degrees, Rounding, Trigonometry)
 - 3.ConsoleInput (Scanner)
-- 4.DecisionMakingStatements
--- 4.1.If_Then
--- 4.2.If_Else_If
--- 4.3.Switch
--- 4.4.Ternary
+- 4.DecisionMakingStatements (4.1.If_Then; 4.2.If_Else_If; 4.3.Switch; 4.4.Ternary)
 - 5.ConditionalOperators	
-- 6. Loop
--- 6.1. Do_While
--- 6.2. For
--- 6.3. For_Each
-- 7. Arrays
--- 7.1. Int
--- 7.2. String
--- 7.3. Multidimensional
+- 6. Loop (6.1. Do_While; 6.2. For; 6.3. For_Each)
+- 7. Arrays (7.1. Int; 7.2. String; 7.3. Multidimensional)
 - 8. Converting (BooleanStringBack; LongIntLongStringBack; StringsIntBack)
