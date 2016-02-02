@@ -45,9 +45,10 @@ public class Oscillograph {
         while (elementPresent != true) {
             elementPresent = isElementPresent(By.xpath(".//div[@class=\"f kv _SWb\"]/cite[contains(text(),\"vit.ua\")]"));
 
+
             if (elementPresent == true) {
 
-                System.out.println("Information VIT.ua was on page:" + pageIndex);
+                System.out.println("VIT.ua is on page:" + pageIndex);
                 screenShot();
             } else if (elementPresent == false) {
                 pageIndex++;
@@ -55,7 +56,7 @@ public class Oscillograph {
                 try {
                     driver.findElement(By.xpath(".//*[@id='pnnext']/span[1]")).click();
                 } catch (NoSuchElementException e) {
-                    System.out.println("VIT.ua not found!");
+                    System.out.println("Sorry. VIT.ua not found!");
                     return;
                 }
             }

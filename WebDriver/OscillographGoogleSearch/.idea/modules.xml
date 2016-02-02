@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MavenWithTestNGAndSeleniumWebDriver.iml" filepath="$PROJECT_DIR$/MavenWithTestNGAndSeleniumWebDriver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OscillographGoogleSearch.iml" filepath="$PROJECT_DIR$/OscillographGoogleSearch.iml" />
     </modules>
   </component>
 </project>
