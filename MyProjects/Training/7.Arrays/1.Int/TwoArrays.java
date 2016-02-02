@@ -11,7 +11,7 @@ public class TwoArrays {
             j[i] = (int)(Math.random()*100+1);
             System.out.print(j[i] + " ");
         }
-        System.out.println(" ");
+        System.out.println("");
         for (int i = 0; i < 10; i++){
             g[i] = j[i];
             System.out.print(g[i] + " ");
