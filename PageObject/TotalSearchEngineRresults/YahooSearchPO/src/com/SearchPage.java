@@ -12,11 +12,11 @@ public class SearchPage extends Page{
     }
 
     //Search box
-    @FindBy(className = "input-wrapper")
+    @FindBy(xpath = ".//*[@id='uh-search-box']")
     private WebElement  sb_form_q;
 
     //Search button
-    @FindBy(id = "search-submit")
+    @FindBy(xpath = ".//*[@id='uh-search-button']")
     private WebElement sb_form_go;
  
     public ResultsPage search(String searchStatement){
