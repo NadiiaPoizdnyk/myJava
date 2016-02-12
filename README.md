@@ -1,5 +1,6 @@
 The repository consits of Java and Test Automation tasks and projects.
 
+-----------
 1. Java
 -- JavaTasks (Basics)
 -- JavaTasksPart2
