@@ -21,7 +21,7 @@ The 'Java' folder consists of following parts:
 -- For loop; 
 -- For_Each.
 7. Arrays 
--- Int; 
+-- IntExamples; 
 -- String; 
 -- Multidimensional.
 8. Converting 
@@ -30,8 +30,19 @@ The 'Java' folder consists of following parts:
 -- StringsIntBack.
 9. Strings (length(), charAt(), equals(), compareTo(), valueOf(); substring(), indexOf(), replace(), isEmpty(), split())
 10. Classes (Declaring Objects)
-________________________________________________________________________________________________________________________
-
+----------------------------------------------------------------------
 ---> JavaTasksPart2 
 1. arrays 
 2. multidimensionalArrays
+
+
+
+
+
+
+----------------------------------------------------------------------
+Notes
+
+1. Exceptions (try-catch) for Scanner are represented in the next tasks:
+- JavaTasks > Arrays > IntExamples > Task: FromKeyboard;
+- 
