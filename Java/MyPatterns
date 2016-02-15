@@ -1,0 +1,44 @@
+//exceptions
+
+1.
+Scanner sc = new Scanner(System.in);
+String s = null;
+Pattern pattern = Pattern.compile("[1-9]{1}");
+Matcher matcher = null;
+
+        do {
+            System.out.print("Type a number from 1 to 9: ");
+            s = sc.nextLine();
+            matcher = pattern.matcher(s);
+            System.out.println("Sorry! Invalid value has been entered");
+
+        } while (!matcher.matches());
+	
+	sc.close();
+		
+2.
+ boolean adv = false;
+ Scanner sc = new Scanner(System.in);
+
+ while (!adv){
+    System.out.print("Please, enter array length: ");
+    String str = sc.nextLine();
+
+     // verify 1)negative numbers; 2)special signs; 3)empty value; 4)letters;
+     // 5)whitespace + letter/numbers
+     try {
+        size = Integer.valueOf(str); //Use Integer.parseInt()/.valueOf() methods to validate the integer input.
+
+        //verify negative numbers input --> invalid value
+        if (size <= 0){
+                    System.out.print("Error! Invalid value has been entered! ");
+                    adv = false;
+                }
+                if (size > 0) {
+                    adv = true;
+                }
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Sorry! Invalid value has been entered. ");
+            }
+        }
