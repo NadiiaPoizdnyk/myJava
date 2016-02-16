@@ -6,21 +6,20 @@ String s = null;
 Pattern pattern = Pattern.compile("[1-9]{1}");
 Matcher matcher = null;
 
-        do {
-            System.out.print("Type a number from 1 to 9: ");
-            s = sc.nextLine();
-            matcher = pattern.matcher(s);
-            System.out.println("Sorry! Invalid value has been entered");
+do {
+    System.out.print("Type a number from 1 to 9: ");
+    s = sc.nextLine();
+    matcher = pattern.matcher(s);
+    if (!matcher.matches()) System.out.println("Sorry! Invalid value has been entered");
+} while (!matcher.matches());
 
-        } while (!matcher.matches());
-	
-	sc.close();
-		
+sc.close();
+	--------------------------------------------------	
 2.
  boolean adv = false;
  Scanner sc = new Scanner(System.in);
 
- while (!adv){
+while (!adv){
     System.out.print("Please, enter array length: ");
     String str = sc.nextLine();
 
@@ -31,14 +30,14 @@ Matcher matcher = null;
 
         //verify negative numbers input --> invalid value
         if (size <= 0){
-                    System.out.print("Error! Invalid value has been entered! ");
-                    adv = false;
-                }
-                if (size > 0) {
-                    adv = true;
-                }
-                break;
-            } catch (NumberFormatException e) {
-                System.out.println("Sorry! Invalid value has been entered. ");
-            }
+            System.out.print("Error! Invalid value has been entered! ");
+            adv = false;
         }
+        if (size > 0){
+			adv = true;
+        }
+        break;
+    } catch (NumberFormatException e) {
+        System.out.println("Sorry! Invalid value has been entered. ");
+    }
+}

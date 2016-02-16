@@ -23,7 +23,7 @@ public class ArrayEqualsNumber {
             System.out.print("Type a number from 1 to 9: ");
             s = sc.nextLine();
             matcher = pattern.matcher(s);
-                System.out.println("Sorry! Invalid value has been entered");
+            if (!matcher.matches()) System.out.println("Sorry! Invalid value has been entered");
 
         } while (!matcher.matches());
 

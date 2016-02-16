@@ -43,8 +43,8 @@ The 'Java' folder consists of following parts:
 ----------------------------------------------------------------------
 Notes
 
-1. Exceptions (try-catch) for Scanner are represented in the next tasks:
-- Java/JavaTasks/src/arrays/intExamples/FromKeyboard.java
-- Java/JavaTasks/src/arrays/intExamples/ArrayEqualsNumber.java
+1. Exceptions (try-catch and pattern usage) for Scanner are represented in the next tasks:
+- Java/JavaTasks/src/arrays/intExamples/FromKeyboard.java (try-catch)
+- Java/JavaTasks/src/arrays/intExamples/ArrayEqualsNumber.java (pattern)
 
 

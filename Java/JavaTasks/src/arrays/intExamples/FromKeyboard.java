@@ -48,6 +48,8 @@ public class FromKeyboard {
         System.out.println("Insert array elements:");
         /*Пройдёмся по всему массиву, заполняя его*/
         for (int i = 0; i < size; i++) {
+
+
             String s = sc.nextLine();
              // Заполняем массив элементами, введёнными с клавиатуры
 
