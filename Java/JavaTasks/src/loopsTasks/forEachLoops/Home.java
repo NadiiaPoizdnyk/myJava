@@ -9,7 +9,7 @@ public class Home {
         String[] j = {"daddy", "mom", "son", "daughter"};
 
         for (String x : j){
-            System.out.println("variable.Hello, " + x);
+            System.out.println("Hello, " + x);
         }
         System.out.println("Hi all");
     }

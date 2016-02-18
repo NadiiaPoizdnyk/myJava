@@ -1,50 +1,41 @@
 package arrays.stringExapmles;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /** The user enters 3 words.
  * The program writes them into an array and prints 3 words.
  */
 public class ThreeWords {
-    public static void main(String[]args){
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         String str = null;
-        Pattern pattern = 
+        Matcher matcher = null;
+        Pattern pattern = Pattern.compile("[a-zA-Z]{2,10}");
 
 
         String mas[] = new String[3];
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
 
-            while (!adv){
+            while (matcher.matches()){
                 System.out.println("Type a word: ");
-
-                try {
-                    str = sc.nextLine();
-                    mas[i] = str;
-
-                    //verify empty str and whitespace + letter/numbers --> invalid value
-                    if (str.isEmpty()) {
-                        System.out.println("Error! Repeat your try. ");
-                        adv = false;
+                str = sc.nextLine();
+                matcher = pattern.matcher(str);
+                mas[i] = str;
+                if (!matcher.matches()){
+                    System.out.println("Error! Repeat your try. ");
+                } else{
+                    for (i = 0; i < 3; i++) {
+                        System.out.print(mas[i] + " ");
                     }
-                    //verify numbers input --> invalid value
-                    if (str.matches("\\d")){
-                        System.out.println("Error! Repeat your try. ");
-                        adv = false;
-                    }
-                    break;
-                }catch (StringIndexOutOfBoundsException e){
-                    System.out.println("Repeat your try.");
                 }
             }
 
-        }
 
-        for (int i = 0; i < 3; i++){
-            System.out.print(mas[i] + " ");
+
+            sc.close();
         }
-        sc.close();
     }
 }

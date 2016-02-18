@@ -1,4 +1,4 @@
-package loopsTasks;
+package loopsTasks.whileLoop;
 
 /** Slide #22
  * [ инициализация; ]
