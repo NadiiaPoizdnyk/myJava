@@ -13,4 +13,8 @@
 -- OscillographGoogleSearch
 -- WikipediaScreenshot
 4. PageObject
--- TotalSearchEngineRresults (Bing, Yahoo, Yandex, Google)
+-- TotalSearchEngineRresults (Bing project; Yahoo project; Yandex project; Google project)
+-- PageObjectWordpressTestCases (tc for login)
+-- OscillographGoogleSearch (Maven; POM; TestNG; FF,Chrome,IE WebDrivers)
+-- OscillographGoogleSearchWithPageFactory (POM; PageFactory; FF,Chrome,IE WebDrivers; TestNG; Maven)
+-- GoogleYandexBingYahooTotalSearchEngineResults (POM; PageFactory; FF,Chrome,IE WebDrivers; TestNG; Maven)
