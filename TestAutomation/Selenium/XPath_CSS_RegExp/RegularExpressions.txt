@@ -61,6 +61,17 @@ IP
 
    
 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+assertTrue(driver.findElement(By.cssSelector("...")).getText().matches("^[\\s\\S]*Server[\\s\\S]*$"));
+assertFalse(driver.findElement(By.cssSelector("...")).getText().matches("^[\\s\\S]*Ruby[\\s\\S]*$"));
 
 
 
