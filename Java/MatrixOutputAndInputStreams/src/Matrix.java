@@ -17,11 +17,11 @@ public class Matrix {
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random(System.currentTimeMillis());
-        int size = 0, i = 0, j = 0, choice = 0;
+        int size, i, j, choice;
         int[][] matrix;
-        String string = null, string1 = null;
+        String string, string1;
         Pattern pattern = Pattern.compile("[1-9]{1}|[1]{1}[0-9]{1}|[2]{1}[0]{1}");      //int digits [1,20]
-        Matcher matcher = null, matcher1 = null;
+        Matcher matcher, matcher1;
         Pattern pattern1 = Pattern.compile("[0-2]{1}");  //regexp for option selection [0-2]
 
         do {
@@ -62,6 +62,9 @@ public class Matrix {
         if (choice == 0){
             System.out.println("Thnx! :) Enjoy ;)");
         }
+        if (choice == 2){
+            System.out.println("It's a pity :( Bye");
+        }
         if (choice == 1){
             saveMatrixToFile(matrix, "D:\\Matrix");
             System.out.println("Your Matrix is saved to the file (D:\\Matrix)");
@@ -70,7 +73,7 @@ public class Matrix {
                         "2 - Do not load my matrix from file; " +
                         "0 - exit the program.");
                 System.out.println("Please select the option: ");
-                string = scanner.nextLine();
+                string1 = scanner.nextLine();
                 matcher1 = pattern1.matcher(string1);
                 if (!matcher1.matches()) System.out.println("Error! Invalid value has been entered! Try again ");
             }while (!matcher1.matches());
@@ -85,18 +88,14 @@ public class Matrix {
                 printMatrix(newMatrix,size);
             }
             if (choice == 2){
-                System.out.println("It's a pity :(");
+                System.out.println("It's a pity :( Bye");
             }
-        }
-        if (choice == 2){
-            System.out.println("It's a pity :(");
         }
 
 
 
     }
     private static void printMatrix(int[][] matrix, int size) {
-        String str = "";
         int a = 1;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
