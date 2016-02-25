@@ -93,6 +93,7 @@ public class Matrix {
 
     }
 
+    //method to print out the matrix by snake (bottom-up)
     private static void printBySnakeOne(int size, int[][] matrix){
         int v, i, j;
         for (i = size-1; i >= 0; i --) {
@@ -111,6 +112,7 @@ public class Matrix {
         System.out.println();
     }
 
+//method to print out the matrix by snake (top-down)
     private static void printBySnakeTwo(int size, int[][] matrix) {
         int i, j, a;
         for (i = 0; i < size; i++) {
@@ -118,7 +120,7 @@ public class Matrix {
                 System.out.print(matrix[i][j] + "\t");
             }
 
-            if (i >= size) {
+            if (i >= size-1) {
                 return;
             }
             i++;
