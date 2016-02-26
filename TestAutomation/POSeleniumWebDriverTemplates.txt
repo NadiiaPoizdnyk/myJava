@@ -1,0 +1,48 @@
+
+
+===============================
+public class Page {
+    WebDriver driver;
+
+    public Page(WebDriver ldriver){
+        this.driver = ldriver;
+    }
+}
+
+===============================
+public class BrowserFactory {
+    static WebDriver driver;
+
+    public static WebDriver startBrowser(String browserName, String url){
+        if (browserName.equalsIgnoreCase("firefox")){
+            driver = new FirefoxDriver();
+        }
+        if (browserName.equalsIgnoreCase("chrome")){
+            System.setProperty("webdriver.chrome.driver", "D:\\Program Files\\WebDrivers\\Chrome\\chromedriver.exe");
+            driver = new ChromeDriver();
+            System.out.println(driver.getTitle());
+        }
+        if (browserName.equalsIgnoreCase("IE")){
+            System.setProperty("webdriver.ie.driver", "D:\\Program Files\\WebDrivers\\IE\\IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
+        }
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get(url);
+
+        return driver;
+
+    }
+}
+
+===============================
+public void captureScreenshot(String filePathAndName) {
+        File screenshot = (File) ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(screenshot, new File(filePathAndName));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+	
+===============================
