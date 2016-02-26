@@ -1,6 +1,7 @@
 
-
+===================================
 1. //exceptions INPUT
+===================================
 Scanner sc = new Scanner(System.in);
 String s;
 Pattern pattern = Pattern.compile("[1-9]{1}");
@@ -14,10 +15,11 @@ do {
 } while (!matcher.matches());
 
 sc.close();
-	--------------------------------------------------	
 
-	
+
+===================================	
 2. //exceptions INPUT
+===================================
 Scanner scanner = new Scanner(System.in);
 boolean index = false;
 String string;
@@ -39,8 +41,9 @@ String string;
 
 
 
-	--------------------------------------------------	
+===================================	
 3.//exceptions INPUT
+===================================
  boolean adv = false;
  Scanner sc = new Scanner(System.in);
 
@@ -67,8 +70,9 @@ while (!adv){
     }
 }
 
-	--------------------------------------------------	
+===================================
 4. SAVE TO FILE
+===================================
 static void saveMatrixToFile(int[][] matrix, String path) throws IOException {
 
         try {
@@ -87,8 +91,9 @@ static void saveMatrixToFile(int[][] matrix, String path) throws IOException {
     }
 	
 	
-	--------------------------------------------------	
+===================================
 5. LOAD FROM FILE
+===================================
 static int[][] loadMatrixFromFile(int size, String path) {
         int[][] matrix = new int[size][size];
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
@@ -102,4 +107,24 @@ static int[][] loadMatrixFromFile(int size, String path) {
             e.printStackTrace();
         }
         return matrix;
+    }
+	
+===================================
+6. METHOD for INPUT values
+===================================
+public int enterValue(OddAndEvenNumbers n){
+        Scanner scanner = new Scanner(System.in);
+        int value;
+        Pattern pattern = Pattern.compile("[0-9]{1,7}");
+        String str;
+        Matcher matcher;
+
+        do {
+            System.out.print("Type in the number: ");
+            str = scanner.nextLine();
+            matcher = pattern.matcher(str);
+            if (!matcher.matches()) System.out.println("Sorry! Invalid value");
+        }while (!matcher.matches());
+        value = Integer.parseInt(str);
+        return value;
     }
