@@ -1,0 +1,43 @@
+
+
+==================================
+public class TestRunner {
+    public static void main(String[] args) {
+
+        Result result = JUnitCore.runClasses(TestSuite.class);
+        for (Failure failure : result.getFailures()) {
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
+    }
+}
+==================================
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+        TestJunit1.class,
+        TestJunit2.class
+})
+public class TestSuite {
+}
+
+==================================
+public class MyClassTest {
+
+    @BeforeClass
+    public static void testSetup() {
+    }
+
+    @AfterClass
+    public static void testCleanup() {
+
+        // Teardown for data used by the unit tests
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testExceptionIsThrown() {
+        MyClass tester = new MyClass();
+        tester.multiply(1000, 5);
+    }
+	
+==================================
+
